@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   # post "/maintenancelogs", to: "maintenancelogs#create"
   # get "/maintenancelogs/:id", to: "maintenancelogs#show"
-  get "/aquariums/:aquarium_id/maintenancelogs", to: "aquarium_maintenancelogs#index"
+  get "/aquariums/:id/logs", to: "aquarium_maintenance_logs#index"
 
   # get '/aquariums/:id/edit', to: 'aquariums#edit'
   # patch '/aquariums/:id', to: 'aquariums#update'
