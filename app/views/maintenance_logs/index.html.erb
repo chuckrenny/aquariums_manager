@@ -1,0 +1,11 @@
+
+
+<h1>Maintenance Logs</h1>
+
+<% @maintenance_logs.each do |log| %>
+  <p>
+    <%= log.maintenance_person %>
+    <%= log.water_change %>
+    <%= log.maintenance_duration_minutes %> minutes
+  </p>
+<% end %>

@@ -1,0 +1,22 @@
+<h1>Aquarium Index</h1>
+
+<% @aquariums.each do |aquarium| %>
+  <h3><a href="/aquariums/<%= aquarium.id %>"><%= aquarium.name %></a></h3>
+  <span><%= aquarium.water_type %></span>
+  </p>
+  <% if aquarium.dirty == true %>
+    <p> This aquarium is dirty and needs maintenance.</p>
+  <% else %>
+    <p> This aquarium is clean and does not need maintenance</p>
+  <% end %>
+  <%= aquarium.gal_size %>
+
+  <form action="/aquariums/<%= aquarium.id %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+  </form>
+<% end %>
+
+<p><a href="/aquariums/new">New Aquarium</a></p>
+<p><a href="/">Home</a></p>

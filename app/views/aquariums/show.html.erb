@@ -1,0 +1,11 @@
+<a href="/aquariums">Aquarium Index</a> 
+
+<p>Name: <%= @aquarium.name %></p>
+<p>Water Type: <%= @aquarium.water_type %></p>
+<p>Is the aquarium dirty? <%= @aquarium.dirty %></p>
+<p>Gallon Size: <%= @aquarium.gal_size %></p>
+<p>Created Date: <%= @aquarium.created_at %></p>
+<p>Updated Date: <%= @aquarium.updated_at %></p><br>
+
+<a href="/aquariums/<%= @aquarium.id %>/edit">Edit</a><br>
+<p><a href="/">Home</a></p>

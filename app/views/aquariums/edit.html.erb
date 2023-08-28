@@ -1,0 +1,22 @@
+<h1>Edit Aquarium</h1>
+<form action="/aquariums/<%= @aquarium.id %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="PATCH" />
+  
+  <label for="name">Aquarium Name:</label><br>
+  <input type="text" id="name" name="name" value="<%= @aquarium.name %>"><br><br>
+  
+  <label for="water_type">Water Type:</label><br>
+  <input type="text" id="water_type" name="water_type" value="<%= @aquarium.water_type %>"><br><br>
+  
+  <label for="dirty">Dirty?</label><br>
+  <input type="text" id="dirty" name="dirty" <%= 'checked' if @aquarium.dirty %>>
+  <br><br>
+  
+  <label for="gal_size">Gallon Size:</label><br>
+  <input type="text" id="gal_size" name="gal_size" value="<%= @aquarium.gal_size %>"><br><br>
+  
+  <button type="submit">Update Aquarium</button>
+</form>
+
+<p><a href="/">Home</a></p>
