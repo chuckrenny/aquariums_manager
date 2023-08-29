@@ -22,8 +22,6 @@ Rails.application.routes.draw do
   # delete '/aquariums/:id', to: 'aquariums#destroy'
 end
 
-# US 6: ActiveRecord
-# As a visitor
-# When I visit the parent index,
-# I see that records are ordered by most recently created first
-# And next to each of the records I see when it was created
+### User Story 10, Parent Child Index Link
+
+As a visitor
