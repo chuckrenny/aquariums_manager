@@ -16,5 +16,15 @@ RSpec.describe "Aquarium Show" do
       expect(page).to have_content(@aquarium.gal_size)
       expect(page).to have_content(@aquarium.created_at)
     end 
+
+    # User Story 10
+    it "has a link to logs" do
+      visit "/aquariums/#{@aquarium.id}"
+
+      expect(page).to have_link("Maintenance Logs of #{@aquarium.name}")
+      click_link("Maintenance Logs of #{@aquarium.name}")
+
+      expect(current_path).to eq("/aquariums/#{@aquarium.id}/logs")
+    end
   end
 end

@@ -9,10 +9,7 @@
 <p> Number of Maintenance Logs: <%= @number_of_maintenance_logs %></p>
 
 <a href="/aquariums/<%= @aquarium.id %>/edit">Edit</a><br>
-<p><a href="/aquariums/<%= @aquarium.id %>/maintenance_logs">Maintenance Logs of <%= @aquarium.name %></a></p>
+<p> <%= link_to "Maintenance Logs of #{@aquarium.name}", "/aquariums/#{@aquarium.id}/logs" %></p>
 <p><a href="/">Home</a></p>
 
 
-
-Then I see a link to take me to that parent's 
-`child_table_name` page ('/parents/:id/child_table_name')

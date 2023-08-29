@@ -22,6 +22,3 @@ Rails.application.routes.draw do
   # delete '/aquariums/:id', to: 'aquariums#destroy'
 end
 
-### User Story 10, Parent Child Index Link
-
-As a visitor
