@@ -20,6 +20,7 @@ class AquariumsController < ApplicationController
 
   def show
     @aquarium = Aquarium.find(params[:id])
+    @number_of_maintenance_logs = @aquarium.maintenance_logs.count
   end
 
   # def edit
