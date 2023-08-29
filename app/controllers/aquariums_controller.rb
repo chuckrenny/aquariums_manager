@@ -1,6 +1,6 @@
 class AquariumsController < ApplicationController
   def index
-    @aquariums = Aquarium.all
+    @aquariums = Aquarium.order(created_at: :desc)
   end
 
   # def new

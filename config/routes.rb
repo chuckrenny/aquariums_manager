@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   # delete '/aquariums/:id', to: 'aquariums#destroy'
 end
 
-### User Story 5, Parent Children Index
+# US 6: ActiveRecord
 # As a visitor
-# When I visit '/parents/:parent_id/child_table_name'
-# Then I see each Child that is associated with that Parent with each Child's attributes
-# (data from each column that is on the child table)
+# When I visit the parent index,
+# I see that records are ordered by most recently created first
+# And next to each of the records I see when it was created

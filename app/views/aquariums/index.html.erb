@@ -2,6 +2,7 @@
 
 <% @aquariums.each do |aquarium| %>
   <h3><a href="/aquariums/<%= aquarium.id %>"><%= aquarium.name %></a></h3>
+  <small> Created at: <%= aquarium.created_at %> </small><br>
   <span><%= aquarium.water_type %></span>
   </p>
   <% if aquarium.dirty == true %>
@@ -9,7 +10,6 @@
   <% else %>
     <p> This aquarium is clean and does not need maintenance</p>
   <% end %>
-  <%= aquarium.gal_size %>
 
   <form action="/aquariums/<%= aquarium.id %>" method="POST">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
