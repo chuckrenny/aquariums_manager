@@ -15,5 +15,12 @@ RSpec.describe "Log Index" do
       expect(page).to have_content(@log.water_change)
       expect(page).to have_content(@log.maintenance_duration_minutes)
     end 
+
+    # User Story 8
+    it "shows a link at the top that redirects to log" do
+      visit "/maintenance_logs"
+
+      expect(page).to have_link("Maintenance Logs", href: '/maintenance_logs')
+    end
   end
 end

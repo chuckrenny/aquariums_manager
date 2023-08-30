@@ -72,8 +72,7 @@ I see a count of the number of Logs associated with this Aquarium
 Usability
 [ ] done
 
-### User Story 8, log
- Index Link
+### User Story 8, log Index Link
 
 As a visitor
 When I visit any page on the site
