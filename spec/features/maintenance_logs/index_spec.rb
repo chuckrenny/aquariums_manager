@@ -8,7 +8,7 @@ RSpec.describe "Log Index" do
     end
 
     # User Story 3
-    it "shows the aquarium attributes" do 
+    it "shows the maintenance attributes" do 
       visit "/maintenance_logs"
 
       expect(page).to have_content(@log.maintenance_person)
