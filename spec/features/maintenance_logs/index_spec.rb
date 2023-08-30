@@ -18,7 +18,7 @@ RSpec.describe "Log Index" do
 
     # User Story 8
     it "shows a link at the top that redirects to log" do
-      visit "/maintenance_logs"
+      visit "/"
 
       expect(page).to have_link("Maintenance Logs", href: '/maintenance_logs')
     end
