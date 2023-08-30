@@ -64,8 +64,7 @@ I see that records are ordered by most recently created first
 And next to each of the records I see when it was created
 [ ] done
 
-### User Story 7, aquarium log
- Count
+### User Story 7, aquarium log Count
 
 As a visitor
 When I visit a Aquarium's show page
