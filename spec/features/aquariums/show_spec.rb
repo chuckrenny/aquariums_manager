@@ -6,8 +6,8 @@ RSpec.describe "Aquarium Show" do
       @aquarium = Aquarium.create!(name: "Forest", water_type: "Fresh", dirty: false, gal_size: 500)
     end
 
-    # User Story 3
-    it "shows the aquarium attributes" do 
+    # User Story 2
+    it "sees the aquariums id and attributes" do
       visit "/aquariums/#{@aquarium.id}"
 
       expect(page).to have_content(@aquarium.name)
@@ -15,7 +15,7 @@ RSpec.describe "Aquarium Show" do
       expect(page).to have_content(@aquarium.dirty)
       expect(page).to have_content(@aquarium.gal_size)
       expect(page).to have_content(@aquarium.created_at)
-    end 
+    end
 
     # User Story 10
     it "has a link to logs" do
